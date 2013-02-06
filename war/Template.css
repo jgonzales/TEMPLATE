@@ -1,0 +1,754 @@
+/** Add css rules here for your application. */
+
+
+/** Example rules used by the template application (remove for your app) */
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #777777;
+  margin: 40px 0px 70px;
+  text-align: center;
+}
+
+.sendButton {
+  display: block;
+  font-size: 16pt;
+}
+
+
+.gwt-DialogBox {
+  width: 400px;
+}
+
+.dialogVPanel {
+  margin: 5px;
+}
+
+.serverResponseLabelError {
+  color: red;
+}
+
+/** Set ids using widget.getElement().setId("idOfElement") */
+#closeButton {
+  margin: 15px 6px 6px;
+}
+
+.txt1{
+	margin-left: 20px;
+	border: 1px Solid #4DB1CB;
+}
+
+.redondear{
+/*General*/
+border-radius: 10px;
+/*Internet Explorer 8*/
+-ms-border-radius: 10px;
+/*Firefox*/
+-moz-border-radius: 10px;
+/*WebKit y Safari*/
+-webkit-border-radius: 10px;
+/*Konqueror*/
+-khtml-border-radius: 10px;
+}
+
+.gwt-ContentPanel{
+	bakcground-color:#ffffff;
+}
+
+.gwt-TextField{}
+.gwt-TextField:hover{border: 1px Solid red;}
+
+
+
+
+.redondear{
+/*General*/
+border-radius: 5px;
+/*Internet Explorer 8*/
+-ms-border-radius: 5px;
+/*Firefox*/
+-moz-border-radius: 5px;
+/*WebKit y Safari*/
+-webkit-border-radius: 5px;
+/*Konqueror*/
+-khtml-border-radius: 5px;
+}
+
+.redondear-sign{
+/*General*/
+border-radius: 0 30px 0 0;
+/*Internet Explorer 8*/ 
+-ms-border-radius: 0 30px 0 0;
+/*Firefox*/
+-moz-border-radius: 0 30px 0 0;
+/*WebKit y Safari*/
+-webkit-border-radius: 0 30px 0 0;
+/*Konqueror*/
+-khtml-border-radius: 0 30px 0 0;
+}
+
+.redondear-sign2{
+/*General*/
+border-radius: 0 0 0 30px;
+/*Internet Explorer 8*/ 
+-ms-border-radius: 0 0 0 30px;
+/*Firefox*/
+-moz-border-radius: 0 0 0 30px;
+/*WebKit y Safari*/
+-webkit-border-radius: 0 0 0 30px;
+/*Konqueror*/
+-khtml-border-radius: 0 0 0 30px;
+}
+
+.hp{
+	border:1px solid #000000;	
+}
+
+.boton1{
+	position:absolute;
+	top:50%;
+	left:30px;
+}
+
+.passimp-titulo{
+	position:absolute;
+	width:540px;
+	top:50px;
+	left:30px;
+	font-size:20px;
+	color:black;
+}
+.passimp-lo{
+	position:absolute;
+	top:105px;
+	left:30px;
+	color:red;
+}
+
+.passimp-radiogroup{
+	position:absolute;
+	top:140px;
+	left:30px;
+	color:blue;
+}
+
+
+
+#passimp-p{
+position:relative;
+width:600px;
+height:400px;
+margin:30px auto 30px auto;
+/*Internet Explorer 8*/
+filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#F0F0F0');
+/*WebKit y Safari*/
+background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#F0F0F0));
+/*Firefox*/
+background: -moz-linear-gradient(top, #FFFFFF, #F0F0F0);
+background-color:#ECF2F4;
+border:solid 2px #000000;
+}
+
+#nueva_contra{
+  margin-left: 35%;
+  margin-top: 10%;
+}
+
+#tam { height: 200px; }
+
+
+body{
+margin:0px 0px 0px 0px; 
+padding:0px 0px 0px 0px; 
+width:100%; 
+height:100%;
+background-image: url(img/fondo.png);
+background-repeat: repeat-x;
+background-color: #566680;
+overflow:auto;
+}
+
+#passimp-vp{
+	position:absolute;
+	top:190px;
+	left:45px;
+	width:520px;
+	height:80px;
+	/*border:solid 1px #000000;*/
+}
+
+.passimp-vp-valor{
+	font-size:13px;
+	color:gray;
+	margin: 0, 0, 0, 0;
+}
+
+.passimp-vp-bvp{
+	margin-top:15px;
+	background-color:#0066CC;
+	border:1px solid #000000;
+	color:#FFFFFF;
+	width:100px;
+	height:30px;
+	cursor:pointer;
+}
+
+.passimp-ba{
+	margin-top:15px;
+	margin-left:20px;
+	background-color:#0066CC;
+	border:1px solid #000000;
+	color:#FFFFFF;
+	width:100px;
+	height:30px;
+	cursor:pointer;
+}
+
+#signin-conf{
+	margin-top:10px;
+	margin-left:10px;
+	background-color:transparent;
+	border:1px solid #000000;
+	color:#000000;
+	width:170px;
+	height:20px;
+	cursor:pointer;
+}
+
+#signin-conf:hover{
+	border:1px solid red;
+	color:red;
+}
+
+#signin-sendButton{
+	margin-top:25px;
+	margin-left:40px;
+	background-color:#0066CC;
+	border:1px solid #000000;
+	color:#FFFFFF;
+	width:100px;
+	height:30px;
+	cursor:pointer;
+}
+
+.passimp-vp-bvp:hover,.passimp-ba:hover,#signin-sendButton:hover{
+	background-color:#0099CC;
+}
+
+#signin-contenedor,.signin-contenedor{
+	position:relative;
+	width:1000px;
+	margin:15px auto 30px auto;
+}
+
+.signin-vp{
+	float:left;
+	width:200px;
+	height:100%;
+	border-left:solid 2px gray;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+#signin-hp{
+float:left;
+width:940px;
+height:550px;
+/*Internet Explorer 8*/
+filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#F0F0F0');
+/*WebKit y Safari*/
+background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#F0F0F0));
+/*Firefox*/
+background: -moz-linear-gradient(top, #FFFFFF, #F0F0F0);
+background-color:#ECF2F4;
+border:solid 12px #D1D1D1;
+margin:5px 0;
+}
+
+#signin-hp2{
+float:left;
+width:1000px;
+height:80px;
+/*Internet Explorer 8*/
+filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#F0F0F0', EndColorStr='#FFFFFF');
+/*WebKit y Safari*/
+background: -webkit-gradient(linear, left top, left bottom, from(#F0F0F0), to(#FFFFFF));
+/*Firefox*/
+background: -moz-linear-gradient(top, #F0F0F0, #FFFFFF);
+background-color:#ECF2F4;
+border:solid 12px #D1D1D1;
+margin:5px 0;
+text-align: center;
+vertical-align: middle;
+}
+
+.shadow{
+-webkit-box-shadow: 15px 15px 30px #000000;
+-moz-box-shadow: 15px 15px 30px #000000;
+filter: progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=135, Strength=20);
+}
+
+#bpifp-vp,#wholesale-vp{
+	position:absolute;
+	width:98%;
+	height:300px;
+	margin:10px;
+	border:solid 5px #BEBEBE;
+}
+
+#wholesale-vp2,.wholesale-vp2{
+	float:left;
+	width:100%;
+	height:100%;
+	margin:10px;
+	border:solid 1px #BEBEBE;
+}
+
+.wholesale-vp2-titulo{
+	width:500px;
+	background:#C7E7FD;
+}
+
+#wholesale-vp3{
+	width:98%;
+	height:100px;
+	margin:10px;
+	border:solid 1px #BEBEBE;
+}
+
+.wholesale-vp3-hp1,.wholesale-vp3-hp2{
+	width:100%;
+	padding-left:5px;
+	text-align:left;
+	border-bottom:solid 1px #BEBEBE;
+	text:left;
+}
+#dimensionesview-window,.dimensionesview-window{
+	background-color:#FFFFFF;
+}
+
+#dimensionesview-window2,.dimensionesview-window2{
+	position:absolute;
+	top:25px;
+	left:25px;
+	background-color:#FFFFFF;
+}
+
+#wholesale-fp,.wholesale-fp,#wholesale-vp2-cp,.wholesale-vp2-cp{
+	margin:10px;
+}
+
+#widget-cp,.widget-cp{
+	position:absolute;
+	width:100%;
+	margin:10px;
+	background-color:#FFFFFF;
+	border:1px solid;
+}
+
+#widget-hp,.widget-hp{
+	float:left;
+	width:100%;
+	margin:10px;
+	background-color:#FFFFFF;
+	border:1px solid;
+}
+
+#iframe1{ 
+	position:relative;
+	width:250px;
+	height:150px;
+	border:1px solid;
+}
+#iframe1-div{
+	position:relative;
+	top:-156px;
+	left:1px;
+	width:248px;
+	height:148px;
+	background-color:#000000;
+	filter:alpha(opacity=33);
+	opacity:0.33;
+	border:1px solid;
+}
+#iframe1-div:hover{
+	filter:alpha(opacity=3);
+	opacity:0.03;
+}
+
+#widget-window,.widget-window{
+	position:absolute;
+	top:20px;
+	left:20px;
+	background-color:#FFFFFF;
+}
+#widget-tabitem,.widget-tabitem{
+	position:absolute;
+}
+
+#widget-portlet,.widget-portlet{
+	float:left;
+	margin:10px;
+}
+#widget-folder,.widget-folder{
+	position:absolute;
+	top:46px;
+	left:0;
+	z-index:1;
+}
+#widget-toolbar,.widget-toolbar{
+	position:absolute;
+	width:100%;
+	height:22px;
+	padding:3px;
+	top:27px;
+	letf:0;
+	margin-left:-1px;
+	z-index:2;
+	background-color:#DFE8F6;
+}
+#review-vp1,.review-vp1{
+	float:left;
+	width:30%;
+	height:100%;
+	border:1px solid;
+}
+#review-vp2,.review-vp2{
+	float:left;
+	width:70%;
+	height:100%;
+}
+
+#review-portlet4,.review-portlet4{
+	float:left;
+	margin:10px;
+	background-color:#ffffff;
+	border:1px solid;
+	cursor:pointer;
+}
+
+#review-portlet4:hover,.review-portlet4:hover{
+	filter:alpha(opacity=90);
+	opacity:0.90;
+}
+
+#review-window-wb1,.review-window-wb1{
+	position:absolute;
+	top:50%;
+	left:10px;
+	background-color:transparent;
+	margin-top:-25px;
+	border:0px;
+	cursor:pointer;
+}
+
+#review-window-wb2,.review-window-wb2{
+	position:absolute;
+	top:50%;
+	left:100%;
+	background-color:transparent;
+	margin-top:-25px;
+	margin-left:-75px;
+	border:0px;
+	cursor:pointer;
+}
+
+.review-toolbar-tboton2{
+	width: 16px;
+	height: 16px;
+	background: url(..img/agregar.png) no-repeat 0px 0px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background-position: 0px 0px;
+	background-repeat: no-repeat no-repeat;
+}
+
+#review-observation-cp,.review-observation-cp{
+	float:left;
+	border:0px;
+}
+
+#review-observation-cp4,.review-observation-c4{
+	float:left;
+	border:0px;
+	padding:0px;
+}
+
+#windowObservation-fp,.windowObservation-fp{
+	position:relative;
+	top:-10px;
+	border:0px;
+	margin:0px;
+	padding:0px;
+}
+
+#file,.file{
+	position:absolute;
+	
+	padding:0px;
+	margin:0px;
+}
+
+.add16-search, #add16-search {
+   width:16px;
+   height:16px;
+   background: url(img/icon/hamburg/zoom.png) no-repeat !important;
+}
+
+.add16-location, #add16-location {
+   width:16px;
+   height:16px;
+   background: url(img/icon/hamburg/home.png) no-repeat !important;
+}
+
+.add16-user, #add16-user {
+   width:16px;
+   height:16px;
+   background: url(img/icon/hamburg/hire-me.png) no-repeat !important;
+}
+
+.add16-configuration, #add16-configuration {
+   width:16px;
+   height:16px;
+   background: url(img/icon/hamburg/settings.png) no-repeat !important;
+}
+
+.add16-additem, #add16-additem {
+   width:16px;
+   height:16px;
+   background: url(img/icon/hamburg/order-1.png) no-repeat !important;
+}
+
+.add16-reporting, #add16-reporting {
+   width:16px;
+   height:16px;
+   background: url(img/icon/hamburg/old-versions.png) no-repeat !important;
+}
+
+.add16-observation, #add16-observation {
+   width:16px;
+   height:16px;
+   background: url(img/icon/hamburg/illustration.png) no-repeat !important;
+}
+
+.add16-edit, #add16-edit {
+   width:16px;
+   height:16px;
+   background: url(img/icon/hamburg/pencil.png) no-repeat !important;
+}
+
+.add16-savedset, #add16-savedset {
+   width:16px;
+   height:16px;
+   background: url(img/icon/hamburg/plus.png) no-repeat !important;
+}
+
+.add16-performaction, #add16-performaction {
+   width:16px;
+   height:16px;
+   background: url(img/icon/hamburg/consulting.png) no-repeat !important;
+}
+
+.add16-viewdetail, #add16-viewdetail {
+   width:16px;
+   height:16px;
+   background: url(img/icon/hamburg/graphic-design.png) no-repeat !important;
+}
+
+.add16-email, #add16-email {
+   width:16px;
+   height:16px;
+   background: url(img/icon/hamburg/email.png) no-repeat !important;
+}
+
+.add16-1, #add16-1 {
+   width:16px;
+   height:16px;
+   background: url(img/icon/hamburg/administrative-docs.png) no-repeat !important;
+}
+
+.add16-2, #add16-2 {
+   width:16px;
+   height:16px;
+   background: url(img/icon/hamburg/archives.png) no-repeat !important;
+}
+
+.add16-loading, #add16-loading {
+   width:16px;
+   height:16px;
+   background: url(resources/images/gxt/icons/loading.gif) no-repeat !important;
+}
+
+.add16-aceptar, #add16-aceptar {
+   width:16px;
+   height:16px;
+   background: url(img/icon/hamburg/check.png) no-repeat !important;
+}
+
+.add16-cancelar, #add16-cancelar {
+   width:16px;
+   height:16px;
+   background: url(img/icon/hamburg/busy.png) no-repeat !important;
+}
+
+.add16-siguiente, #add16-siguiente {
+   width:16px;
+   height:16px;
+   background: url(img/icon/stuttgart/sign-in.png) no-repeat !important;
+}
+
+.add16-atras, #add16-atras {
+   width:16px;
+   height:16px;
+   background: url(img/icon/stuttgart/sign-out.png) no-repeat !important;
+}
+
+#fondo,.fondo{
+	background-color:#DFE8F6;
+}
+
+.add16-config, #add16-config {
+   width:16px;
+   height:16px;
+   background: url(img/icon/hamburg/config.png) no-repeat !important;
+}
+
+.add16-sign-out, #add16-sign-out {
+   width:16px;
+   height:16px;
+   background: url(img/icon/hamburg/sign-out.png) no-repeat !important;
+}
+
+.add16-main-user, #add16-main-user {
+   width:16px;
+   height:16px;
+   background: url(img/icon/hamburg/user.png) no-repeat !important;
+}
+
+.add16-roles, #add16-roles {
+   width:16px;
+   height:16px;
+   background: url(img/icon/hamburg/customers.png) no-repeat !important;
+}
+
+.add16-lock, #add16-lock {
+   width:16px;
+   height:16px;
+   background: url(img/icon/hamburg/lock.png) no-repeat !important;
+}
+
+.add16-refresh, #add16-refresh {
+   width:16px;
+   height:16px;
+   background: url(img/icon/hamburg/refresh.png) no-repeat !important;
+}
+
+.add16-delete, #add16-delete {
+   width:16px;
+   height:16px;
+   background: url(img/delete.png) no-repeat !important;
+}
+
+.flexObservation, #flexObservation{
+	border:1px solid #000000;
+}
+
+.flexObservation-2, #flexObservation-2{
+	border:1px dashed #AFAFAF;
+}
+
+.flexObservation-3, #flexObservation-3{
+	border:1px dotted red;
+}
+
+.flexborde, #flexborde{
+	border:1px dashed red;
+}
+
+.poppanel,#poppanel{
+	background-color: #F9F9F9;
+	border: 1px solid #3366CC;
+}
+
+.menuitem,#menuitem{
+	cursor: pointer;
+	font-size: small;
+	margin: 5px;
+	border: 1px solid #F0F0F0;
+}
+
+.menuitem:hover,#menuitem:hover{
+	background: url("resources/images/default/menu/item-over.gif") repeat-x;
+	border: 1px solid #99CCFF;
+}
+
+.add16-save, #add16-save {
+   width:16px;
+   height:16px;
+   background: url(img/save.png) no-repeat !important;
+}
+
+.add16-upload, #add16-upload {
+   width:16px;
+   height:16px;
+   background: url(img/icon/hamburg/publish.png) no-repeat !important;
+}
+
+.add16-usuarioactual, #add16-usuarioactual {
+   width:16px;
+   height:16px;
+   background: url(img/icon/hamburg/suppliers.png) no-repeat !important;
+}
+
+
+.add16-crear_userj, #add16-crear_userj {
+   width:16px;
+   height:16px;
+   background: url(img/icon/hamburg/plus.png) no-repeat !important;
+}
+
+.add16-limpiar_userj, #add16-limpiar_userj {
+   width:16px;
+   height:16px;
+   background: url(img/icon/hamburg/busy.png) no-repeat !important;
+}
+
+
+.add16-billing, #add16-billing {
+   width:16px;
+   height:16px;
+   background: url(img/icon/hamburg/billing.png) no-repeat !important;
+}
+
+.add16-excel, #add16-excel {
+   width:16px;
+   height:16px;
+   background: url(img/imgexcelicon.png) no-repeat !important;
+}
+
+.add16-listroles, #add16-listroles {
+   width:16px;
+   height:16px;
+   background: url(img/icon/hamburg/check.png) no-repeat !important;
+}
+
+
+.add16-sinuso, #add16-sinuso {
+   width:16px;
+   height:16px;
+   background: url(img/icon/hamburg/settings.png) no-repeat !important;
+}
+
+.fondo_titulo,#fondo_titulo{
+	/*Internet Explorer 8*/
+filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#064169', EndColorStr='#011D32');
+/*WebKit y Safari*/
+background: -webkit-gradient(linear, left top, left bottom, from(#064169), to(#011D32));
+/*Firefox*/
+background: -moz-linear-gradient(top, #064169, #011D32);
+border-bottom:1px solid #000000;
+}
+
+
+

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee                http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+
+
+
+<servlet>
+   <servlet-name>ServiceOpenServlet</servlet-name>
+   <servlet-class>com.harinosoftware.core.server.ServiceOpenServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>ServiceOpenServlet</servlet-name>
+    <url-pattern>/serviceopen</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet>
+  <servlet-name>SecurityServlet</servlet-name>
+  <servlet-class>com.harinosoftware.core.server.SecurityServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>SecurityServlet</servlet-name>
+    <url-pattern>/security</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>LoginServlet</servlet-name>
+  <servlet-class>com.harinosoftware.core.server.LoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/servicelogin</url-pattern>
+  </servlet-mapping>
+  
+   
+   
+   <filter>
+     <filter-name>filtro</filter-name>
+      <filter-class>com.harinosoftware.core.filtros.Filtros</filter-class>
+   </filter>   
+   
+    <filter-mapping>
+    <filter-name>filtro</filter-name>
+           <servlet-name>Servicios_Auxiliares_Servlet</servlet-name>                      
+           <servlet-name>SecurityServlet</servlet-name>     
+   </filter-mapping> 
+   
+     
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>Template.html</welcome-file>
+  </welcome-file-list>
+
+  <servlet>
+    <servlet-name>SystemServiceServlet</servlet-name>
+    <servlet-class>com.google.api.server.spi.SystemServiceServlet</servlet-class>
+    <init-param>
+      <param-name>services</param-name>
+      <param-value/>
+    </init-param>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>SystemServiceServlet</servlet-name>
+    <url-pattern>/_ah/spi/*</url-pattern>
+  </servlet-mapping>
+
+</web-app>
